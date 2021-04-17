@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.header_wrap {
+	height: 5rem;
+	background: #ffff00;
+}
+
+.title {
+	margin: 0;
+	padding: 1rem 0 0 1.5rem;
+	width: 7.5rem;
+}
+
+.title > a:hover {
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.header ul {
+	width: 7rem;
+	margin: 0;
+	padding-top: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.header ul li input {
+	width: 5rem;
+}
