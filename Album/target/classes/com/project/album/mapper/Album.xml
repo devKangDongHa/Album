@@ -6,4 +6,10 @@
 <!-- 루트 엘리먼트 & 네임스페이스 설정(프로젝트 전체 내에서 유일해야 한다.) -->
 <mapper namespace="Album">
 
+	<select id="getAllPhotos" resultType="com.project.album.model.PhotoVO">
+		SELECT PHOTO_SEQ, PHOTO_NAME, PHOTO_DAY, CATEGORY_SEQ, FOLDER_SEQ, PHOTO_LIKE, orgFileName, FileSize
+		FROM ALBUM_PHOTO
+		ORDER BY PHOTO_SEQ DESC
+	</select>
+
 </mapper>

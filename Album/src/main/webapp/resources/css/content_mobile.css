@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+.content_left, .content_right {
+	display: none;
+}
+
+.content_mobile_wrap {
+	display: block;
+	width: 100%;
+}
+
+.content_mobile {
+	padding: 1rem 1rem;
+}

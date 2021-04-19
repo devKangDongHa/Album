@@ -1,1 +1,152 @@
 @charset "UTF-8";
+
+.menu_area {
+	height: 3rem;
+	width: 100%;
+	border-bottom: 0.05rem solid #cccccc;
+}
+
+.menu_btn_area {
+	height: 100%;
+}
+
+.menu_btn_area > ul {
+	padding: 0.5rem 2rem;
+	height: 2rem;
+}
+
+.menu1 > ul {
+	float: left;
+	height: 2rem;
+}
+
+.menu1 > ul > li {
+	float:left;
+	padding: 0 0.4rem;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
+	opacity: 0.6;
+}
+
+.menu1 > ul > li:hover {
+	opacity: 1;
+}
+
+.menu2 > ul {
+	float: right;
+}
+
+.menu2 > ul > li {
+	float:left;
+	padding: 0 0.4rem;
+	height: 2rem;
+}
+
+.view_sort > ul > li{
+	float: left;
+}
+
+.menu1 > ul > li:nth-child(1) {
+	background: url(../images/checkcircle.png) center center no-repeat;
+}
+
+.menu1 > ul > li:nth-child(2) {
+	background: url(../images/calendar.png) center center no-repeat;
+}
+
+.menu1 > ul > li:nth-child(3) {
+	background: url(../images/plus.png) center center no-repeat;
+}
+
+.time_sort {
+	border: none;
+	outline: none;
+	margin-top: 0.6rem;
+}
+
+.time_sort:hover {
+	cursor: pointer;
+}
+
+.view_sort {
+	padding-top: 0.2rem !important;
+}
+
+.view_sort > ul > li {
+	width: 1.6rem;
+	height: 1.6rem;
+	border: 1px solid #cccccc;
+	opacity: 0.4;
+}
+
+.view_sort > ul > li:nth-child(1) {
+	background: url(../images/view_sort_1.png) center center no-repeat;
+	background-size: 0.8em;
+}
+
+.view_sort > ul > li:nth-child(2) {
+	background: url(../images/view_sort_4.png) center center no-repeat;
+	background-size: 0.8em;
+	border-left: none;
+	border-right: none;
+}
+
+.view_sort > ul > li:nth-child(3) {
+	background: url(../images/view_sort_9.png) center center no-repeat;
+	background-size: 0.8em;
+}
+
+.menu1 button {
+	border: none;
+	background: none;
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
+
+.menu1 button:hover {
+	cursor: pointer;
+}
+
+.view_sort button {
+	border: none;
+	background: none;
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
+
+.view_sort button:hover {
+	cursor: pointer;
+}
+
+.sort_selected {
+	opacity: 1 !important;
+	border: 1px solid #000000 !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.content_wrap {
+	width: 100%;
+}
+
+.content_area {
+	padding: 2rem 1rem;
+	margin: 0 auto;
+}
+
+.photo_list {
+	overflow: auto;
+}
+
+.photo_list > li {
+	margin-left: 5px;
+	float: left;
+}
+
+.photo {
+	width: inherit;
+	max-height: 7rem;
+}
