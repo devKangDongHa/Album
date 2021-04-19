@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+}
+
+.content_wrap {
+	width: 100%;
+}
+
+.content_left {
+	position: absolute;
+	z-index: 20;
+	top: 5rem;
+	bottom: 1.5rem;
+	width: 15%;
+	height: 40rem;
+	border-right: 0.025rem solid #d9d9d9;
+}
+
+.content_right {
+	left: 15%;
+	right: 0;
+	top: 5rem;
+	position: absolute;
+}
+
+.menu_area {
+	height: 3rem;
+	width: 100%;
+	border-bottom: 0.05rem solid #cccccc;
+}
+
+.menu_btn_area {
+	height: 100%;
+}
+
+.menu_btn_area > ul {
+	padding: 0.5rem 3rem;
+	height: 2rem;
+}
+
+.menu1 > ul {
+	float: left;
+	height: 2rem;
+}
+
+.menu1 > ul > li {
+	float:left;
+	padding: 0 0.4rem;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
+}
+
+.menu2 > ul {
+	float: right;
+}
+
+.menu2 > ul > li {
+	float:left;
+	padding: 0 0.4rem;
+	height: 2rem;
+}
+
+.menu_sort > ul > li{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+}
+
+.menu1 > ul > li:nth-child(1) {
+	background: url(../images/checkcircle.png) center bottom no-repeat;
+}
+
+.menu1 > ul > li:nth-child(2) {
+	background: url(../images/calendar.png) center bottom no-repeat;
+}
+
+.menu1 > ul > li:nth-child(3) {
+	background: url(../images/plus.png) center bottom no-repeat;
+}

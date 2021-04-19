@@ -19,12 +19,12 @@ ul {
 
 .header_wrap {
 	height: 5rem;
-	background: #ffff00;
+	background: #dab3ff;
 }
 
 .title {
-	margin: 0;
-	padding: 1rem 0 0 1.5rem;
+	margin: 0 auto;
+	padding-top: 1rem;
 	width: 7.5rem;
 }
 
@@ -39,12 +39,26 @@ ul {
 }
 
 .header ul {
-	width: 7rem;
-	margin: 0;
-	padding-top: 1.5rem;
-	margin-right: 1.5rem;
+	display: none;
 }
 
-.header ul li input {
-	width: 5rem;
+.header .btn_choice {
+	margin: 0 auto;
+	width: 1.5rem;
+	height: 2rem;
+	background: url(../images/check.png) no-repeat;
+	display: none;
 }
+
+.header .btn_menu {
+	margin: 0 auto;
+	width: 1.5rem;
+	height: 2rem;
+	background: url(../images/menu.png) no-repeat;
+	display: none;
+}
+
+.header ul li {
+	flex: 1;
+}
+
