@@ -21,7 +21,44 @@
 		
 		$(".btn_selected").parent().addClass("sort_selected");
 		
+		$(".view_big > button").click(function(){
+			$(".view_sort li").removeClass("sort_selected");
+			$(".view_sort li button").removeClass("btn_selected");
+			$(this).addClass("btn_selected");
+			$(this).parent().addClass("sort_selected");
+			$(".photo").css('width','15.5rem');
+			$(".photo").css('height','21.7rem');
+		});
 		
+		$(".view_medium > button").click(function(){
+			$(".view_sort li").removeClass("sort_selected");
+			$(".view_sort li button").removeClass("btn_selected");
+			$(this).addClass("btn_selected");
+			$(this).parent().addClass("sort_selected");
+			$(".photo").css('width','8.5rem');
+			$(".photo").css('height','11.9rem');
+		});
+		
+		$(".view_small > button").click(function(){
+			$(".view_sort li").removeClass("sort_selected");
+			$(".view_sort li button").removeClass("btn_selected");
+			$(this).addClass("btn_selected");
+			$(this).parent().addClass("sort_selected");
+			$(".photo").css('width','5rem');
+			$(".photo").css('height','7rem');
+		});
+		
+		$(".photo").parent().hover(function(){
+			$(this).css('opacity', '0.4');
+			$(this).css('z-index', '-5');
+			$(this).children(".check").css('display','block');
+			$(this).children(".like").css('display','block');
+		}, function(){
+			$(this).css('opacity', '1.0');
+			$(this).css('z-index', '1');
+			$(this).children(".check").css('display','none');
+			$(this).children(".like").css('display','none');	
+		});
 		
 	});
 		
@@ -54,9 +91,9 @@
 								</li>
 								<li class="view_sort">
 									<ul>
-										<li><button></button></li>
-										<li><button></button></li>
-										<li><button class="btn_selected"></button></li>
+										<li class="view_big"><button></button></li>
+										<li class="view_medium"><button></button></li>
+										<li class="view_small"><button class="btn_selected"></button></li>
 									</ul>
 								</li>
 							</ul>
@@ -70,7 +107,11 @@
 				<ul class="photo_list">
 					<c:if test="${not empty allphotos }">
 						<c:forEach var="allphotosVO" items="${allphotos }">
-							<li><div><img class="photo" src="<%=ctxPath %>/resources/photoImg/${allphotosVO.orgfilename}" alt="" /></div></li>		
+							<li>
+							<div class="photo" style="background-image: url('<%=ctxPath%>/resources/photoImg/${allphotosVO.photo_name }'); "></div>
+							<div class="check none">v</div>
+							<div class="like none">a</div>
+							</li>		
 						</c:forEach>
 					</c:if>
 					<c:if test="${empty allphotos }">

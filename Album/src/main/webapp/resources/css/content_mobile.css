@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.content_left, .content_right {
+/* .content_left, .content_right {
 	display: none;
 }
 
@@ -11,4 +11,24 @@
 
 .content_mobile {
 	padding: 1rem 1rem;
+} */
+
+.menu_area {
+	display: none;
+}
+
+.content_mobile {
+	display: none;
+}
+
+.content_left {
+	display: none;
+}
+
+.content_right {
+	left: 0;
+}
+
+.photo {
+	width: 7.7rem !important;
 }

@@ -142,11 +142,38 @@
 }
 
 .photo_list > li {
-	margin-left: 5px;
+	margin: 5px 0 0 5px;
 	float: left;
+	height: 7rem;
 }
 
 .photo {
-	width: inherit;
-	max-height: 7rem;
+	height: 7rem;
+	width: 5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+}
+
+.none {
+	display: none;
+}
+
+.check {
+	position: relative;
+	top: -7rem;
+	left: 0.5rem;
+	z-index: 10;
+	width: 5px;
+	height: 5px;
+}
+
+.like {
+	position: relative;
+	bottom: 2rem;
+	right: -4rem;
+	z-index: 10;
+	width: 5px;
+	height: 5px;
 }
